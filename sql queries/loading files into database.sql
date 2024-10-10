@@ -1,4 +1,14 @@
+-- creating table
+CREATE TABLE toronto10k(
+	racerID INT NOT NULL,
+	name NVARCHAR(250) NOT NULL,
+	overall_place NVARCHAR(50) NOT NULL,
+	chip_time TIME NOT NULL,
+	gun_TIME TIME NOT NULL,
+	division NVARCHAR(10)
+);
 
+-- iterate through csv files and insert into table
 DECLARE @NumFiles INT =  5;
 DECLARE @Counter INT = 1;
 
