@@ -10,7 +10,7 @@ CREATE TABLE toronto10k(
 	name NVARCHAR(250) NOT NULL,
 	overall_place NVARCHAR(50) NOT NULL,
 	chip_time TIME NOT NULL,
-	gun_TIME TIME NOT NULL,
+	gun_time TIME NOT NULL,
 	division NVARCHAR(10)
 );
 
