@@ -1,6 +1,12 @@
+-- drop table if it exists
+IF OBJECT_ID('toronto10k', 'U') IS NOT NULL
+BEGIN
+	DROP TABLE toronto10k
+END
+
 -- creating table
 CREATE TABLE toronto10k(
-	racerID INT NOT NULL,
+	racerID INT PRIMARY KEY NOT NULL,
 	name NVARCHAR(250) NOT NULL,
 	overall_place NVARCHAR(50) NOT NULL,
 	chip_time TIME NOT NULL,
