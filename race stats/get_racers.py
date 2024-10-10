@@ -3,11 +3,11 @@ from pathlib import Path
 import csv
 
 # columns with relevant info
-COL_NUM = [1, 2, 4, 5, 8]
-FIELD_NAMES = ['name', 'overall place', 'chip time', 'gun time', 'division']
+COL_NUM = [1, 2, 3, 4, 5, 8]
+FIELD_NAMES = ['racer_id', 'name', 'overall place', 'chip time', 'gun time', 'division']
 
 
-def get_results(html_file, new_file_path, anon_count):
+def get_results(html_file, new_file_path):
     data = []
 
     # reading and parsing through html file for info
@@ -25,15 +25,18 @@ def get_results(html_file, new_file_path, anon_count):
 
                 elif i == 2:
                     gun_time = columns[i].text.strip()
+                
+                elif i == 3:
+                    racer_id = columns[i].text.strip()
 
                 elif i == 4:
                     name = columns[i].a.text.strip()
                     name = name.split(",")
 
                     # reformmating name
-                    # regular first and last name and anoymous participants
+                    # regular first and last name
                     if len(name) >= 2:
-                        first_name = name[1].strip()
+                        first_name = name[1].strip().title()
                         last_name = name[0].strip().title()
 
                     # single name
@@ -54,6 +57,7 @@ def get_results(html_file, new_file_path, anon_count):
                 elif i == 8:
                     chip_time = columns[i].text.strip()
 
+            print(f"Racer ID: {racer_id}")
             print(f"Racer: {name}")
             print(f"Overall place: {place}")
             print(f"Chip time: {chip_time} min")   
@@ -61,7 +65,7 @@ def get_results(html_file, new_file_path, anon_count):
             print(f"Division: {division}")
             print("")
 
-            racer_info = {'name': name, "overall place": place, "chip time": chip_time,
+            racer_info = {'racer_id': racer_id, 'name': name, "overall place": place, "chip time": chip_time,
                         "gun time": gun_time, "division": division }
         
             data.append(racer_info)
