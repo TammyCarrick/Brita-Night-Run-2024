@@ -1,4 +1,4 @@
-# Brita Night Run Toronto 10K 2024 Results
+# Brita Night Run Toronto 10k 2024 Results
 Visualizing the results of the Brita Night Run. 
 
 **Tableau Visualization**:
