@@ -14,6 +14,7 @@ Interactive Tableau dashboard can be found [here](https://public.tableau.com/sha
 ## Data Source:
 - Race results were scraped from the [official time keeping website](https://www.startlinetiming.com/en/races/2024/nr_toronto/event/10K/page)
 - This visualization focusses on the performance of the racers as opposed to who won the race. Thus, the visualizations and race rankings are based on chip time as opposed to gun time.
+- The Python code used to scrape the data can be found [here.](https://github.com/TammyCarrick/Brita-Night-Run-2024/blob/main/race%20stats/parsing_stats.py)
   
 <!--- The fields used in t for each racer are:
   - name
