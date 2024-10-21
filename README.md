@@ -6,9 +6,16 @@ Interactive Tableau dashboard can be found [here](https://public.tableau.com/sha
 
 ![Race Results](https://github.com/TammyCarrick/Brita-Night-Run-2024/blob/main/imgs/Night%20Run%20Dashboard%203.png?raw=true)
 
-## Data source:
-- Race results were scraped from the [official time keepering website](https://www.startlinetiming.com/en/races/2024/nr_toronto/event/10K/page)
-- The fields available for each racer are:
+## Insights:
+- There was a much higher proportion of women competeting in the 19 to 29 age bracket than men.
+- On average, men finished the race seven minutes faster than women.
+- Only two women placed in the top twenty.
+
+## Data Source:
+- Race results were scraped from the [official time keeping website](https://www.startlinetiming.com/en/races/2024/nr_toronto/event/10K/page)
+- This visualization focusses on the performance of the racers as opposed to who won the race. Thus, the visualizations and race rankings are based on chip time as opposed to gun time.
+  
+<!--- The fields used in t for each racer are:
   - name
   - race #
   - city, province/country
@@ -22,6 +29,7 @@ Interactive Tableau dashboard can be found [here](https://public.tableau.com/sha
 - Here's a screenshot of the top five records:
   ![top of records](https://github.com/TammyCarrick/Brita-Night-Run-2024/blob/main/imgs/top%20five%20records.png?raw=true)
   
-- The visualizations focus on the performance of the racers as opposed to who won the race. Thus, the visualizations and race rankings are based on chip time as opposed to gun time.
+
+-->
   
 
